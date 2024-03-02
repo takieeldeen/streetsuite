@@ -1,5 +1,4 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Dashboard from "./pages/Dashboard";
 import AppLayout from "./ui/AppLayout";
 import Alerts from "./pages/Alerts";
 import Training from "./pages/Training";
