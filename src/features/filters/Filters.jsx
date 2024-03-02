@@ -13,11 +13,11 @@ function Filters() {
     strategy: "",
     asset: "",
   };
-  const [opened, setOpened] = useState(true);
+  const [opened, setOpened] = useState(false);
   const handleToggle = () => setOpened(!opened);
   return (
     <aside
-      className={` fixed right-0 ${opened ? "" : "translate-x-[100%]"} top-1/2 z-20 flex h-[95dvh] w-[427px]  -translate-y-1/2  flex-col items-center gap-2 overflow-y-scroll rounded-bl-lg rounded-tl-lg bg-geekDark p-6 pr-4 transition-all duration-300 md:relative md:right-auto md:top-auto md:translate-x-0 md:translate-y-0`}
+      className={` fixed right-0 ${opened ? "" : "translate-x-[100%]"} top-1/2 z-20 flex h-[95dvh] w-[350px]  -translate-y-1/2  flex-col items-center gap-2 overflow-y-scroll rounded-bl-lg rounded-tl-lg bg-geekDark p-6 pr-4 transition-all duration-300 md:relative md:right-auto md:top-auto md:translate-x-0 md:translate-y-0`}
     >
       <Button
         onClick={() => handleToggle()}
