@@ -1,13 +1,13 @@
 function TextOptions({ title, options }) {
   return (
-    <form className="flex flex-col items-center ">
+    <div className="flex flex-col items-center ">
       <p className="mb-2 text-sm font-bold text-white">Strategy</p>
       <div className="flex flex-col items-center">
         {options.map((option, index) => (
           <div key={index}>
             <input
               type="radio"
-              name={title}
+              name={title.toLowerCase()}
               value={option.value}
               id={option.value}
               className="peer h-0 w-0"
@@ -21,7 +21,7 @@ function TextOptions({ title, options }) {
           </div>
         ))}
       </div>
-    </form>
+    </div>
   );
 }
 

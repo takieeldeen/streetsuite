@@ -41,81 +41,82 @@ function Stock() {
           placeholder="$ TICKER"
           style={{ height: "27px", fontSize: "13px" }}
         />
-        <Form className="flex flex-col gap-6 pl-4">
-          {/* Industry filters */}
-          <FilterBtn filters={data_filters} />
-          {/* Market Cap filters */}
-          <div className="grid grid-cols-2 gap-4">
-            <Options
-              title="Market Cap"
-              options={[
-                {
-                  name: "Micro",
-                  value: "micro",
-                },
-                {
-                  name: "Small",
-                  value: "small",
-                },
-                {
-                  name: "Large",
-                  value: "large",
-                },
-              ]}
-            />
-            <Options
-              title="Risk Level"
-              options={[
-                {
-                  name: "Low Risk",
-                  value: "lowrisk",
-                },
-                {
-                  name: "Mid Risk",
-                  value: "midrisk",
-                },
-                {
-                  name: "High Risk",
-                  value: "highrisk",
-                },
-              ]}
-            />
-            <TextOptions
-              title="Strategy"
-              options={[
-                {
-                  name: "Big Option Buys",
-                  value: "bigoption",
-                },
-                {
-                  name: "Merger Arbitrage",
-                  value: "mergerarbitrage",
-                },
-                {
-                  name: "Short Reports",
-                  value: "shortreports",
-                },
-              ]}
-            />
-            <TextOptions
-              title="Asset"
-              options={[
-                {
-                  name: "Stocks",
-                  value: "stocks",
-                },
-                {
-                  name: "Options",
-                  value: "options",
-                },
-                {
-                  name: "Futures",
-                  value: "futures",
-                },
-              ]}
-            />
-          </div>
-        </Form>
+
+        {/* Industry filters */}
+        <FilterBtn filters={data_filters} />
+        {/* Market Cap filters */}
+        <div className="grid grid-cols-2 gap-4">
+          <Options
+            title="Market Cap"
+            heading="marketcap"
+            options={[
+              {
+                name: "Micro",
+                value: "micro",
+              },
+              {
+                name: "Small",
+                value: "small",
+              },
+              {
+                name: "Large",
+                value: "large",
+              },
+            ]}
+          />
+          <Options
+            title="Risk Level"
+            heading="risklevel"
+            options={[
+              {
+                name: "Low Risk",
+                value: "lowrisk",
+              },
+              {
+                name: "Mid Risk",
+                value: "midrisk",
+              },
+              {
+                name: "High Risk",
+                value: "highrisk",
+              },
+            ]}
+          />
+          <TextOptions
+            title="Strategy"
+            options={[
+              {
+                name: "Big Option Buys",
+                value: "bigoption",
+              },
+              {
+                name: "Merger Arbitrage",
+                value: "mergerarbitrage",
+              },
+              {
+                name: "Short Reports",
+                value: "shortreports",
+              },
+            ]}
+          />
+          <TextOptions
+            title="Asset"
+            options={[
+              {
+                name: "Stocks",
+                value: "stocks",
+              },
+              {
+                name: "Options",
+                value: "options",
+              },
+              {
+                name: "Futures",
+                value: "futures",
+              },
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

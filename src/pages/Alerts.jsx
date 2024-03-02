@@ -128,10 +128,10 @@ const data_alerts = [
 
 function Alerts() {
   return (
-    <div className=" relative w-full md:grid md:grid-cols-[1fr,427px] md:pr-2">
+    <div className=" relative w-full grid-cols-[1fr,350px] md:grid md:pr-2 lg:grid-cols-[1fr,427px]">
       <div className="w-full  pr-2 md:pr-8 ">
         <header className="flex w-full items-center gap-2">
-          <h2 className="relative  text-[20px] font-extrabold uppercase text-white before:absolute before:-left-4 before:top-1/2 before:block before:h-[70%] before:w-[5px] before:-translate-y-1/2   before:bg-geekAccent before:content-[''] md:text-[48px]">
+          <h2 className="relative  text-[20px] font-extrabold uppercase text-white before:absolute before:-left-4 before:top-1/2 before:block before:h-[70%] before:w-[5px] before:-translate-y-1/2   before:bg-geekAccent before:content-[''] lg:text-[48px]">
             Alerts
           </h2>
           <SearchForm placeholder="Search By..." />
